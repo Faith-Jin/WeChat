@@ -1,0 +1,24 @@
+.img-list{
+  flex: 1;
+}
+/* 第二种方式 .img-list{
+  float: left;
+  width: 50%;
+} */
+.img-item{
+  box-sizing: border-box;
+  padding: 5rpx;
+  position: relative;
+}
+.img-item image{
+  display: block;
+  width: 100%;
+}
+.img-item .downbtn{
+  opacity:0.5;
+  right: 5px;
+  bottom: 5px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}

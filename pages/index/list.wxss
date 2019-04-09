@@ -1,0 +1,13 @@
+/* pages/index/mulu.wxss */
+@import "/template/image.wxss";
+
+.img-contaniner-item{
+  margin-top: 10px;
+}
+.img-contaniner{
+  box-sizing: border-box;
+  display: flex;
+  padding: 6rpx;
+  width: 100vw;
+  height: 100vh;
+}

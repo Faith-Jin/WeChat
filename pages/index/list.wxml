@@ -1,0 +1,21 @@
+<!--pages/index/mulu.wxml-->
+
+<import src="/template/image.wxml" />
+
+<view class='contaniner-list'>
+  <!-- srcoll不适用弹性盒模型，需在里嵌套view -->
+  <scroll-view class='img-contaniner-item' 
+    bindscrolltolower = "lower" 
+    scroll-y
+  >
+  <view class='img-contaniner'>
+    <view class='img-list'>
+      <template is="item" wx:for="{{imgs.left}}" data="{{...item}}" />
+    </view>
+
+    <view class='img-list'>
+      <template is="item" wx:for="{{imgs.right}}" data="{{...item}}" />
+    </view>
+  </view>
+  </scroll-view>
+</view>

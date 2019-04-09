@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<image src='/images/cf_bg1.png' class="bankground"></image>
+<view class="container">
+  <view class='search-view'>
+    <text class="search-logo">
+      CF图片站
+    </text>
+    <form class='search-form' bindsubmit='formQuery'>
+      <button form-type='submit'>
+        <image src='/images/search.png'></image>
+      </button>
+      <input class='search-input' name="q"></input>
+    </form>
+
+    <view class='list'>
+      <navigator wx:for="{{link}}" url='/pages/index/list?q={{item}}'>{{item}}</navigator>
+    </view>
+  </view>
+</view>

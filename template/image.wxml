@@ -1,0 +1,17 @@
+<template name="item">
+  <view class='img-item'>
+    <image 
+      src='{{thumb}}' 
+      mode='widthFix'
+      bindtap='look'
+      data-obj="{{obj}}"
+      data-middle="{{middle}}"
+    ></image>
+    <image 
+      class="downbtn" 
+      bindtap='download' 
+      src='/images/download1.png'
+      data-src="{{middle}}"
+    ></image>
+  </view>
+</template>
